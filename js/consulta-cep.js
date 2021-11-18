@@ -10,9 +10,9 @@ rua.value = 'Domingos Jose';
 cidade.value = 'Porto Alegre';
 uf.value = 'RS';
 
-btnCep.addEventListener('click', function(e) {
+btnCep.addEventListener('click', function (e) {
     e.preventDefault();
-    
+
     let urlBase = 'https://viacep.com.br/ws/';
     let parametros = uf.value + '/' + cidade.value + '/' + rua.value + '/json/';
     let callback = '?callback=popularNaoSeiMeuCep';
@@ -24,22 +24,22 @@ btnCep.addEventListener('click', function(e) {
 
 function popularNaoSeiMeuCep(resposta) {
 
-    if(!Array.isArray(resposta)) {
+    if (!Array.isArray(resposta)) {
         alert('O retorno não é uma lista de CEPs');
         return;
     }
 
-    resposta.forEach(function(i) {
+    resposta.forEach(function (i) {
 
         let li = document.createElement('li');
         let endereco = i.logradouro + ' | ' + i.bairro + ' | ' + i.localidade + ' | ' + i.uf + ' | ' + i.cep;
         li.innerHTML = endereco;
-        li.setAttribute('onclick', 'exibirCep('+i.cep.replace('-', '')+')')
+        li.setAttribute('onclick', 'exibirCep(' + i.cep.replace('-', '') + ')')
         listaCep.appendChild(li);
     });
 
 }
 
-function exibirCep(cep){
-    alert(cep);
+function exibirCep(cep) {
+    alert('Este e o seu CEP: ' + cep);
 }
