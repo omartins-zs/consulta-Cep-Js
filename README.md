@@ -21,3 +21,4 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ### 📑 Utilitários
 - API do [ViaCep](https://viacep.com.br/)
+- Editor: **[Visual Studio Code](https://code.visualstudio.com/)**
