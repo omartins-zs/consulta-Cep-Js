@@ -6,5 +6,9 @@
 </p>
 
 
+<h1 align="center">
+    <img  src="./gif/consulta-CEP.gif" />
+</h1>
+
 ### 📑 Utilitários
 - API do [ViaCep](https://viacep.com.br/)
