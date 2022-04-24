@@ -17,6 +17,7 @@ Consulta CEP JS<img align="right" height="40" width="45" src="https://github.com
     <img  src="./gif/consulta-CEP.gif" />
 </h1>
 
+<i>
 
 ## 🚀 Tecnologias
 
@@ -30,3 +31,4 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ### 📑 Utilitários
 - API do **[ViaCep](https://viacep.com.br/)**
 - Editor: **[Visual Studio Code](https://code.visualstudio.com/)**
+</i>
